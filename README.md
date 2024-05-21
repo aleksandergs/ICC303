@@ -17,8 +17,3 @@ por ultimo usando una matrix de 1024 x 1024 se ejecuto 5 veces el programa con d
 16 procesos: 500,	548,	694,	503,	594 : avg =	567.8 ms
 
 como se puede aoreciar, en este ejemplo especifico la ventaja del paralelismo disminuye drasticamente apartir de 4 procesos y entre 8 y 16 hay un incremento en el tiempo que se toma probablemente causado por al gun overhead que realice la libreria mpi por cada proceso.
-
-
-
-
-
