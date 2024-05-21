@@ -8,11 +8,11 @@ se comprobo que los resultados fueran los mismos usando los procesos paralelos a
 ![image](https://github.com/aleksandergs/ICC303/assets/53494540/c34097b3-a47e-486d-8543-4a1aad98fee4)
 ![image](https://github.com/aleksandergs/ICC303/assets/53494540/9ed1430e-f6d9-4b6b-8a1f-66b471a13940)
 
-por ultimo usando una matrix de 1024 x 1024 se ejecuto 5 veces el programa con diversos numeros de hilos/procesos para comprobar el rendimiento:
-1 proceso: 1771,	1380,	1330,	1357,	1280 : avg = 1423.6 ms\n
-2 procesos: 864,	825,	877,	868,	854 : avg =	857.6 ms
-4 procesos: 600,	640,	570,	600,	622 : avg = 606.4 ms
-8 procesos: 549,	505,	544,	526,	511 :	avg = 527 ms
-16 procesos: 500,	548,	694,	503,	594 : avg =	567.8 ms
+por ultimo usando una matrix de 1024 x 1024 se ejecuto 5 veces el programa con diversos numeros de hilos/procesos para comprobar el rendimiento:  
+1 proceso: 1771,	1380,	1330,	1357,	1280 : avg = 1423.6 ms  
+2 procesos: 864,	825,	877,	868,	854 : avg =	857.6 ms  
+4 procesos: 600,	640,	570,	600,	622 : avg = 606.4 ms  
+8 procesos: 549,	505,	544,	526,	511 :	avg = 527 ms  
+16 procesos: 500,	548,	694,	503,	594 : avg =	567.8 ms  
 
 como se puede aoreciar, en este ejemplo especifico la ventaja del paralelismo disminuye drasticamente apartir de 4 procesos y entre 8 y 16 hay un incremento en el tiempo que se toma probablemente causado por al gun overhead que realice la libreria mpi por cada proceso.
